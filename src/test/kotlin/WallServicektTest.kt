@@ -180,7 +180,7 @@ class WallServicektTest {
             donut = Donut(true, 1, true, true,"")
         )
         val newPost3 = Post(
-            id = 2,
+            id = 15,
             ownerId = 1,
             fromId = 1, createdBy = 1,
             date = "2022-05-11",
