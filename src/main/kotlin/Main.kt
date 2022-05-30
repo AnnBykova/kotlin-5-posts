@@ -6,7 +6,7 @@ fun main() {
         id = 0,
         ownerId = 1,
         fromId = 1,
-        createdBy = 1,
+        createdBy=1,
         date = "2022-05-10",
         text = "текст",
         replyOwnerId = 1,
