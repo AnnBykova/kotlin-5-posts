@@ -25,6 +25,7 @@ data class Post (
     val isFavorite : Boolean,
     val donut : Donut?,
     val postponedId : Long?,
+    val attachments: Array <Attachment>
         )
 
 data class Comment (

@@ -31,7 +31,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
         val expectedId: Long = 1
         val post: Post = serviceAdd.add(newPost)
@@ -66,7 +67,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
         val newPost2 = Post(
             id = 0,
@@ -91,7 +93,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
         val newPost3 = Post(
             id = 2,
@@ -116,7 +119,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
 
         serviceUpdate.add(newPost)
@@ -152,7 +156,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
         val newPost2 = Post(
             id = 0,
@@ -177,7 +182,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
         val newPost3 = Post(
             id = 15,
@@ -202,7 +208,8 @@ class WallServicektTest {
             likes = Likes(0, true, true, true),
             reposts = Reposts(0,true),
             views = Views(0),
-            donut = Donut(true, 1, true, true,"")
+            donut = Donut(true, 1, true, true,""),
+            attachments = emptyArray<Attachment>()
         )
 
         serviceUpdate.add(newPost)
