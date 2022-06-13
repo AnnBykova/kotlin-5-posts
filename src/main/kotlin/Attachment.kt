@@ -1,4 +1,4 @@
-open class Attachment ( val  type: String )
+sealed class Attachment ( val  type: String )
 data class VideoAttachment ( val video :Video ) : Attachment ( type = "video")
 data class Video (
     val id: Long,

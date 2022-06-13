@@ -19,7 +19,7 @@ fun main() {
         markedAsAds = false,
         isFavorite = false,
         postponedId = 0,
-        comments = Comment(0, false, false, false, false),
+        comments = Comment(0, "", false, false, false, false),
         copyright = Copyright(12, "", "name", "type"),
         likes = Likes(0, true, true, true),
         reposts = Reposts(0, true),
@@ -45,7 +45,7 @@ fun main() {
         markedAsAds = false,
         isFavorite = false,
         postponedId = 0,
-        comments = Comment(0, false, false, false, false),
+        comments = Comment(0, "", false, false, false, false),
         copyright = Copyright(12, "", "name", "type"),
         likes = Likes(0, true, true, true),
         reposts = Reposts(0, true),
@@ -73,7 +73,7 @@ fun main() {
         markedAsAds = false,
         isFavorite = false,
         postponedId = 0,
-        comments = Comment(0, false, false, false, false),
+        comments = Comment(0, "", false, false, false, false),
         copyright = Copyright(12, "", "name", "type"),
         likes = Likes(0, true, true, true),
         reposts = Reposts(0, true),
@@ -87,9 +87,11 @@ fun main() {
                 )
     )
 
+    val comment = Comment (1, "комментарий", true, true, true, true)
     wallService.add(newPost)
     wallService.add(newPost2)
     wallService.postUpdate(newPost3)
+    wallService.createComment(2, comment)
 }
 
 

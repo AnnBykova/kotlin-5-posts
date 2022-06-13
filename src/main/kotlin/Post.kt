@@ -1,7 +1,7 @@
 import java.util.Date
 
 data class Post (
-    val id : Long = 0,
+    val id : Int = 0,
     val ownerId : Long,
     val fromId : Long,
     val createdBy : Long?,
@@ -30,6 +30,7 @@ data class Post (
 
 data class Comment (
     val count : Int,
+    val text: String,
     val canPost : Boolean,
     val groupsCanPost : Boolean,
     val canClose : Boolean,
@@ -66,3 +67,5 @@ data class Donut (
     val canPublishFreeCopy : Boolean,
     val editMode : String,
 )
+
+class PostNotFoundException (message: String) : RuntimeException (message)
