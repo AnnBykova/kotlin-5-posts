@@ -1,34 +1,36 @@
 import java.util.Date
 
 data class Post (
-    val id : Long = 0,
+    val id : Int = 0,
     val ownerId : Long,
     val fromId : Long,
-    val createdBy : Long,
+    val createdBy : Long?,
     val date : String,
     val text : String,
-    val replyOwnerId : Long,
-    val replyPostId : Long,
+    val replyOwnerId : Long?,
+    val replyPostId : Long?,
     val friendsOnly : Boolean,
-    val comments : Comment,
-    val copyright : Copyright,
-    val likes : Likes,
-    val reposts : Reposts,
-    val views : Views,
+    val comments : Comment?,
+    val copyright : Copyright?,
+    val likes : Likes?,
+    val reposts : Reposts?,
+    val views : Views?,
     val postType : String,
-    val signerId : Long,
+    val signerId : Long?,
     val canPin : Boolean,
     val canDelete : Boolean,
     val canEdit : Boolean,
     val isPinned : Boolean,
     val markedAsAds : Boolean,
     val isFavorite : Boolean,
-    val donut : Donut,
-    val postponedId : Long,
+    val donut : Donut?,
+    val postponedId : Long?,
+    val attachments: Array <Attachment>
         )
 
 data class Comment (
     val count : Int,
+    val text: String,
     val canPost : Boolean,
     val groupsCanPost : Boolean,
     val canClose : Boolean,
@@ -65,3 +67,5 @@ data class Donut (
     val canPublishFreeCopy : Boolean,
     val editMode : String,
 )
+
+class PostNotFoundException (message: String) : RuntimeException (message)
